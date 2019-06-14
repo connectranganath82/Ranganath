@@ -1,0 +1,20 @@
+body {
+    background-image: url("hardik.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;   
+}
+#content {
+    text-align: left;
+    padding-top: 20%;
+    color:black;
+    
+
+}
+h1 {
+    font-size: 40px;
+font-style: normal;    
+}
