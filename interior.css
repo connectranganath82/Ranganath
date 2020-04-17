@@ -1,0 +1,32 @@
+body {
+	background: url(https://mla-architecture.co.uk/wp-content/uploads/2020/03/Greenlands-Road-1.jpg) no-repeat center center fixed;
+    color: white;
+    background-size: cover;
+	background-position: center center;
+	font-family: Lato;
+	color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  
+
+}
+
+#content {
+	text-align: center;
+	padding: 25%;
+	text-shadow: 2px 2px 10px black;
+
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+
+	font-size: 5em;
+	font-weight: 700;
+
+
+}
+
