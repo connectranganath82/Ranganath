@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -66,32 +68,48 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>We are ready to help you</h2>
+<h2>Book your appointment online</h2>
 <div class="container">
   <div style="text-align:center">
     <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
+    <p>Please submit your details so our excutive will callback </p>
   </div>
   <div class="row">
     <div class="column">
       <img src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
     </div>
     <div class="column">
-      <form action="/action_page.php">
+      <form action="/action_page.php" onsubmit="myFunction()"><label for="party">Date of Appointment</label>
+        <input id="party" type="datetime-local" name="partydate" value="2020-04-18T08:30"><br><br>
+        
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email address</label>
+        <input type="email" id="emaiid" name="email address" placeholder="Your email address">
+        <label for="phone">Mobile / phone number</label>
+        <input type="tel" id="phone" name="Phone number" placeholder="Your contact number"><br><br>
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="australia">Australia</option>
+          <option value="india">India</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
+        
+        
+        
+        
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <textarea id="subject" name="subject" placeholder="Write about your project requirements" style="height:170px"></textarea>
+        <input type="submit" value="Submit" >
+        
       </form>
+      <script>
+        function myFunction() {
+          alert("Appointment booked successfully");
+        }
+      </script>
     </div>
   </div>
 </div>
